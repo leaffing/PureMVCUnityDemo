@@ -9,6 +9,7 @@ public class EventsEnum
     public const string NEW_USER = "newUser";
     public const string DELETE_USER = "deleteUser";
     public const string CANCEL_SELECTED = "cancelSelected";
+    public const string ADD_USER = "addUser";
 
     public const string USER_SELECTED = "userSelected";
     public const string USER_ADDED = "userAdded";

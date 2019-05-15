@@ -34,9 +34,7 @@ public class UserFormMediator : Mediator, IMediator
 
     void UserForm_AddUser()
     {
-        UserVO user = View.User;
-        userProxy.AddItem(user);
-        SendNotification(EventsEnum.USER_ADDED, user);
+        SendNotification(EventsEnum.ADD_USER, View.User);
         View.ClearForm();
     }
 

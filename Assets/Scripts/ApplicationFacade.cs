@@ -57,6 +57,7 @@ public class ApplicationFacade : Facade
         Debug.Log("InitializeController()");
         base.InitializeController();
         RegisterCommand(EventsEnum.STARTUP, typeof(StartupCommand));
+        RegisterCommand(EventsEnum.ADD_USER, typeof(AddUserCommand));
         RegisterCommand(EventsEnum.DELETE_USER, typeof(DeleteUserCommand));
     }
 }

@@ -46,9 +46,9 @@ public class UserForm : MonoBehaviour
         btn_updateUser.onClick.AddListener(btn_updateUser_Click);
         btn_cancel.onClick.AddListener(btn_cancel_Click);
 
-        txt_userName.onValueChange.AddListener(InputField_onValueChange);
-        txt_password.onValueChange.AddListener(InputField_onValueChange);
-        txt_confirmPassword.onValueChange.AddListener(InputField_onValueChange);
+        txt_userName.onValueChanged.AddListener(InputField_onValueChange);
+        txt_password.onValueChanged.AddListener(InputField_onValueChange);
+        txt_confirmPassword.onValueChanged.AddListener(InputField_onValueChange);
 
         UpdateButtons();
     }
